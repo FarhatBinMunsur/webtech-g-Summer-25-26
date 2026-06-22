@@ -1,0 +1,16 @@
+h1{
+ color: red;   
+}
+
+#hd2{
+    background-color: aqua;
+    border: 3px dashed;
+    border-radius: 10px;
+}
+.inputStyle{
+    background-color: antiquewhite;
+    font-style:italic;
+    font-display: block;
+    font-family: 'Gill Sans' ;
+    color:brown;
+}
