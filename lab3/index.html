@@ -1,8 +1,6 @@
-
-
 <html>
 <head>
-        <link rel="stylesheet" href="./style.css">    
+        <link rel="stylesheet" href="style.css">    
 
 </head>
     <body>
@@ -12,7 +10,7 @@
         <h1 id="hd1">Welcome to Webtech</h1>
         <h2 id="hd2">Summer 25-26</h2>
         
-        <fieldset>
+        <fieldset id="names">
             <legend>Names</legend>
         <label >First name: </label>
         <input class="inputStyle" type="text" placeholder="Enter your first name.">
@@ -24,13 +22,13 @@
         
         </fieldset>
         
-        <label >Email: </label>
+        <label id="email">Email: </label>
         <input class="inputStyle" type="email">
         <br><br>
 
         <label>Gender: </label>
-        <input type="radio" name="Gender">Male
-        <input type="radio" name="Gender">FeMale
+        <input type="radio"  name="Gender" >Male
+        <input type="radio" name="Gender" >FeMale
 
         <br><br>
 
@@ -39,7 +37,7 @@
 
         <br>
 
-        Range:<input type="range" min="1" max="100">
+        Range:<input type="range"  min="1" max="100">
 
 
         <br><br>
@@ -52,14 +50,14 @@
 
         <br><br>
 
-        Address: <textarea name="" id="">
+        Address: <textarea  name="" id="">
             
         </textarea>
 
         <br><br>
         <input type="checkbox">Agree to terms and conditions.
-        <input type="submit">
-        <input type="reset">
+        <input type="submit" class="buttons">
+        <input type="reset" class="buttons">
         <input type="hidden">
         <br>
         <input type="file">

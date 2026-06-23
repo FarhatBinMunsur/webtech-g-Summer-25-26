@@ -2,6 +2,9 @@ h1{
  color: red;   
 }
 
+h2{
+    text-align: center;
+}
 #hd2{
     background-color: aqua;
     border: 3px dashed;
@@ -12,5 +15,24 @@ h1{
     font-style:italic;
     font-display: block;
     font-family: 'Gill Sans' ;
-    color:brown;
+    color:purple;
+}
+
+form{
+    border: 3px dashed firebrick ;
+    border-radius:10px;
+    padding: 10px;
+}
+
+#names,#email,.buttons{
+    color: rgb(195, 18, 110);
+    font-weight: bold;
+    font-family:Arial;
+    font-size: 18px;
+
+}
+
+/* universal selector */
+*{
+    text-align: center;
 }
