@@ -1,5 +1,5 @@
 h1{
- color: red;   
+ color: black;   
 }
 
 h2{
@@ -7,8 +7,10 @@ h2{
 }
 #hd2{
     background-color: aqua;
-    border: 3px dashed;
+    border: 19px dashed;
     border-radius: 10px;
+    border-top-style: dashed;
+    border-bottom-style: dotted;
 }
 .inputStyle{
     background-color: antiquewhite;
@@ -19,8 +21,8 @@ h2{
 }
 
 form{
-    border: 3px dashed firebrick ;
-    border-radius:10px;
+    border: 5px dotted firebrick ;
+    border-radius:20px 50px;
     padding: 10px;
 }
 
@@ -34,5 +36,246 @@ form{
 
 /* universal selector */
 *{
+    text-align: left;
+}
+
+/* combinator */
+
+/* Child combinator */
+
+/* div>p{
+   background-color: crimson;
+   color: aliceblue;
+} */
+
+/* descendant combinator */
+/* 
+div p{
+   background-color: crimson;
+   color: aliceblue;
+} */
+
+/* next sibling combinator */
+
+/* div+p{
+   background-color: crimson;
+   color: aliceblue;
+} */
+
+/* Subsequent sibling  */
+
+div ~ p {
+    background-color: darkred;
+    color: antiquewhite;
+}
+
+a:link{
+    color: crimson;
+}
+
+a:visited{
+    color:forestgreen;
+}
+
+a:hover{
+    font-size: larger;
+    color:steelblue;
+}
+
+a.highlight:hover{
+    font-size: larger;
+    color:tomato;
+}
+
+a:active{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+#email:focus{
+    background-color: red;
+}
+
+div:hover{
+    background-color: yellowgreen;
+}
+
+#div2 p{    /* here I used descendant combinator */
+    display: none;
+    background-color: yellow;
+    padding: 20px;
+}
+
+#div2:hover p{
+    display:block;
+    font-weight:bold;
+}
+
+p:first-child{
+    background-color:darkkhaki;
+    font-size: 18px;
+}
+
+p:last-child{
+   font-family: Impact;
+}
+
+/* p:first-of-type{
+    font-family: Arial, Helvetica, sans-serif;
+} */
+
+/* Attribute Selector */
+a[target]{
+    font-style: italic;
+}
+
+a[target="_blank"]{
+    font-weight: bold;
+}
+
+p[class~="top"]{
+    color: crimson;
+    background: none;
+}
+
+
+p[class|="unga"]{
+    color:darkmagenta;
+    background: none;
+}
+
+p[class^="bunga"]{
+    color:palevioletred;
+    background-color: antiquewhite;
+}
+
+p[class$="class"]{
+    font-style: oblique;
+    background-color: black;
+}
+
+p[class *= "mo"]{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
+}
+
+/* if you want to select same type elements without a class or id */
+input[type="file"]{
+    color:chocolate;
+    font-family: ' Lucida Sans' ;
+    font-size: large;
+}
+
+input[type="number"]{
+    color: brown;
+    font-weight: bold;
+    font-size: large;
+    
+}
+
+input[type="text"]{
+    width: 200px;
+    height: 30px;
+}
+
+/* coloring */
+
+.pForColor{
+    /* background-color: transparent; */
+    color: rgb(170,0,255);
+    color: rgba(255,255,255,50%);
+}
+
+#pForColor{
+    text-align: center;
+    margin-left: 200px;
+    margin-right:200px;
+    padding:10px;
+    border-radius: 50px;
+    border-style: dashed;
+    border-width: 5px;
+    border-color: aqua;
+}
+
+div.relative{
+    position: relative;
+    height: 100px;
+    width: auto;
+    border:2px dashed;
+    
+}
+
+div.absolute{
+    position: absolute;
+    height: 50px;
+    width: 200px;
+    top: 50px;
+    right: 10px;
+    border: 5px solid red;
+}
+
+.sticky{
+    position: sticky;
+    top:0;
+    bottom: 10;
+    border: 5px solid green;
+    border-radius: 30px;
+    margin-top: 30px; 
+    background-color: aquamarine; 
+    font-size: large;
+}
+
+.parentContainer{
+    position: relative;
+    border: 1px solid purple;
+}
+.blackbox{
+    position: relative;
+    height:100px;
+    width:300px;
+    border:3px solid black;
+    z-index: 1;
+}
+
+.redbox{
+    position: absolute;
+    height: 50px;
+    width: 250px;
+    border: 5px solid red;
+    z-index: 2;
+    top: 50px;
+    left: 50px;
+    background-color: red;
+}
+
+.graybox{
+    position: absolute;
+    height: 50px;
+    width: 200px;
+    border: 5px solid gray;
+    z-index: 3;
+    left:250px;
+    top: 30px;
+    background-color: grey;
+    
+}
+
+#overflowTest{
+    margin: 20px ;
+    height: 70px;
+    width: 300px;
+    border: 1px solid crimson;
+    border-width: thick;
+    padding: 2px;
+    background-color: aquamarine;
+    /* overflow: visible; */
+    /* overflow: hidden; */
+    /* overflow: scroll; */
+    overflow: auto; 
+    /* overflow-x: scroll;
+    overflow-y: scroll; */
+}
+
+#overflowTest:hover{
+    background-color:greenyellow;
 }

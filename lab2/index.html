@@ -2,35 +2,37 @@
     <head></head>
     <body>
 
-        <form action="/submit_form" autocomplete="on" method="post" enctype="multipart/form-data" >
+        <form action="/submit_form" autocomplete="on" enctype="multipart/form-data" method="post" oninput="">
 
         <h1>Welcome to Webtech</h1>
         <h2>Summer 25-26</h2>
         
         <fieldset>
             <legend>Names</legend>
-        <label >First name: </label>
-        <input type="text" placeholder="Enter your first name.">
+        <label for="firstname">First name: </label>
+        <input type="text" id="firstname" name="firstname" placeholder="Enter your first name.">
         <br><br>
 
         <label >Last name: </label>
-        <input type="text">
-        <br><br>
+        <input type="text" name="lastname">
         
         </fieldset>
-        
-        <label >Email: </label>
-        <input type="email">
+
         <br><br>
 
-        <label>Gender: </label>
-        <input type="radio" name="Gender">Male
-        <input type="radio" name="Gender">FeMale
+        <label >Email: </label>
+        <input type="email" name="email">
+        <br><br>
+
+        
+        <label for="gender">Gender: </label>
+        <input type="radio" name="Gender" id="male" value="male" >Male
+        <input type="radio" name="Gender" id="female" value="female">FeMale
 
         <br><br>
 
         <label for="">Age: </label>
-        <input type="number" name="" id="" min="0" max="120">
+        <input type="number" name="age" id="" min="0" max="120">
 
         <br>
 
@@ -52,12 +54,60 @@
         </textarea>
 
         <br><br>
+        
+        <input type="hidden" value="mahir" name="default">
+        <br><br>
+        <input type="file">
+
+        <br><br>
+
+        <input type="image" src="IMG_20260621_202027.jpg">
+        <br><br>
+        <label for="birthyear">select your birth year and month </label>
+        <input type="month" name="birthyear" id="">
+        <br><br>
+
+        <label for="country"> Your Country: </label>
+        <input type="text" name="country" id="country" list="countries">
+        <datalist id="countries">
+            <option value="Bangladesh"></option>
+            <option value="Palestine"></option>
+            <option value="Africa"></option>
+        </datalist>
+
+
+
+        <br><br>
         <input type="checkbox">Agree to terms and conditions.
+        
+        <br><br>
+
         <input type="submit">
         <input type="reset">
-        <input type="hidden">
-        <br>
-        <input type="file">
+
+        </form>
+
+
+        <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+
+        Addition calculator: <br>
+
+        <input type="number" id="a" value="0"> + <input type="number" id="b" value="0"> = <output name="result">0</output>
+
+        <select name="courses" id="">
+            
+            <optgroup label="General">
+                <option value="Bangla">Bangla</option>
+                <option value="English">English</option>
+                <option value="ICT">ICT</option>
+
+            </optgroup>
+            <optgroup label="Science">
+                <option value="phy">Physics</option>
+                <option value="English">Chemistry</option>
+            </optgroup>
+
+        </select>
 
         </form>
     </body>
