@@ -1,8 +1,10 @@
 <html>
-    <head></head>
+    <head>
+        <link rel="icon" type="image/x-icon" href="download2.ico">
+    </head>
     <body>
 
-        <form action="/submit_form" autocomplete="on" enctype="multipart/form-data" method="post" oninput="">
+        <form action="/submit_form" autocomplete="on" enctype="multipart/form-data" target="_blank" method="post" oninput="">
 
         <h1>Welcome to Webtech</h1>
         <h2>Summer 25-26</h2>
@@ -13,8 +15,8 @@
         <input type="text" id="firstname" name="firstname" placeholder="Enter your first name.">
         <br><br>
 
-        <label >Last name: </label>
-        <input type="text" name="lastname">
+        <label for="lastname">Last name: </label>
+        <input type="text" name="lastname" id="lastname">
         
         </fieldset>
 
@@ -68,7 +70,7 @@
         <br><br>
 
         <label for="country"> Your Country: </label>
-        <input type="text" name="country" id="country" list="countries">
+        <input type="text" name="country" id="country"  list="countries">
         <datalist id="countries">
             <option value="Bangladesh"></option>
             <option value="Palestine"></option>
@@ -93,8 +95,10 @@
         Addition calculator: <br>
 
         <input type="number" id="a" value="0"> + <input type="number" id="b" value="0"> = <output name="result">0</output>
+        
+        <br><br>
 
-        <select name="courses" id="">
+        <select>
             
             <optgroup label="General">
                 <option value="Bangla">Bangla</option>
@@ -109,6 +113,7 @@
 
         </select>
 
+        <input type="month">
         </form>
     </body>
 </html>

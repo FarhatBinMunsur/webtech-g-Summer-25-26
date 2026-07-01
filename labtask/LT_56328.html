@@ -1,0 +1,171 @@
+<html>
+    <head>
+        <title> course-registration</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="author" content="Farhat Mahir">
+        <meta name="description" content="A registration webpage for AIUB">
+        <meta name="keywords" content="AIUB,registration,student,courses">
+        <meta charset="UTF-8">
+        <link rel="icon"  type="image/x-icon" href="download2.ico">
+        
+    </head>
+    
+    <style>
+        table,th,td{
+            border: 1px solid brown;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+    </style>
+
+    <body>
+        <header>
+            <img src="download2.ico" alt="">
+           <h1>COURSE REGISTRATION</h1>
+        </header>
+
+        <nav>
+            <a href="#">HOME</a>
+            <a href="courses.html">COURSES</a>
+            <a href="profile.html">PROFILE</a>
+            <a href="">LOGOUT</a>
+        </nav>
+
+        <br>
+
+        <main>
+         <form action="/registrationInfo" enctype="multipart/form-data" >
+        <fieldset >
+            <legend>Student Information</legend>
+            <label >Full Name: </label>
+            <input type="text" required>
+            <br><br>
+            <label for="">Student ID: </label>
+            <input type="text" required placeholder="example: 22-22222-2 " pattern="^\d{2}-\d{5}-\d{1}$">
+            <br><br>
+            <label for="">Email: </label>
+            <input type="email" required>
+            <br><br>
+            <label for="">Depertment: </label>
+            <select name="dept" id="dept">
+                <option value="CSE">CSE</option>
+                <option value="EEE">EEE</option>
+                <option value="COE">COE</option>
+                <option value="BBA">BBA</option>
+                <option value="IPE">IPE</option>
+            </select>
+
+            <br><br>
+
+            <label for="">Current Semester</label>
+            <input type="number" min="1" max="8">
+
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+
+                <legend>Course Selection</legend>
+                <table border="2">
+                
+                <thead>
+                <th>Course Code</th>
+                <th>Course name</th>
+                <th>Credits</th>
+                <th>Select</th>
+                </thead>
+
+                <tbody>
+                    <tr>
+                    <td>111</td>
+                    <td>IP</td>
+                    <td>3</td>
+                    <td><input type="checkbox"></td>
+                    </tr>
+
+                    <tr>
+                    <td>112</td>
+                    <td>JAVA</td>
+                    <td>3</td>
+                    <td><input type="checkbox"></td>
+                    </tr>
+
+                    <tr>
+                    <td>113</td>
+                    <td>WEBTECH</td>
+                    <td>3</td>
+                    <td><input type="checkbox"></td>
+                    </tr>
+
+                    <tr>
+                    <td>114</td>
+                    <td>.NET</td>
+                    <td>3</td>
+                    <td><input type="checkbox"></td>
+                    </tr>
+
+                    <tr>
+                    <td>115</td>
+                    <td>Python</td>
+                    <td>2</td>
+                    <td><input type="checkbox"></td>
+                    </tr>
+                    
+                    <tr>
+                    <td>116</td>
+                    <td>COA</td>
+                    <td>2.5</td>
+                    <td><input type="checkbox"></td>
+                    </tr>
+                </tbody>
+                
+            </table>
+            </fieldset>
+           
+
+            <fieldset>
+            <legend>Class Timing</legend>
+            Preffered Time Slots: 
+            <input type="checkbox">Morning
+            <input type="checkbox"> Afternoon
+            <input type="checkbox"> Evening
+
+            <br><br>
+
+            Any scheduling conflicts:
+            <textarea name="" id=""></textarea>
+            </fieldset>
+
+            <label for="">Do you need lab Access?</label>
+            <input type="radio" name="acc" id="">Yes
+            <input type="radio" name="acc">No
+
+            <br>
+
+            Upload Previous Semester Transcript
+            <input type="file">
+
+            <br><br>
+
+            <input type="submit">
+            <input type="reset">
+
+           </form>
+
+
+        </main>
+
+
+           <footer>
+            <label for="">Contact Information</label>
+            <label for="">Social Media Links</label>
+           </footer>
+
+
+
+
+
+        
+    </body>
+</html>
